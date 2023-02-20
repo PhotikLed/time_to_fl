@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h3 text-align="center">Размещение по каютам</h3>
+{% for hero in crew %}
+    {% set cycle = loop.index | string() %}
+    {% if loop.index == 1 %}
+        <h4>{{hero + ' - Каюта № ' + cycle + ' - Капитан корабля'}}</h4>
+    {% else %}
+        <h4>{{hero + ' - Каюта № ' + cycle}}</h4>
+    {% endif %}
+{% endfor %}
+{% endblock %}
