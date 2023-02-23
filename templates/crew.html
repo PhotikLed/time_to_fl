@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% set person = crew['members'] | random() %}
+<div style="text-align: center;"> <h3>{{ person['name'] + ' ' + person['surname']}}</h3> </div>
+{% set photo = person['photo'] | string() %}
+<img align="middle" src={{ photo }}>
+{% set profs = person['professions'] | sort() | spis_to_string() %}
+<div style="text-align: center;"> <h5>{{ profs }}</h5> </div>
+
+{% endblock %}

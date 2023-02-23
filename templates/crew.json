@@ -1,0 +1,23 @@
+{
+  "crew_name": "Tonus",
+  "members": [
+    {
+      "name": "Серега",
+      "surname": "Масло",
+      "photo": "https://sun1.userapi.com/sun1-13/s/v1/ig2/rGv-OCWJm0h4PErAsYUudyBeM8Y3NPJDKpE36svRxp6HQgWvJ3lvlD5NFqae1DhyBEBDSoL4OQK2fZQd75hqb32Z.jpg?size=1170x980&quality=95&type=album",
+      "professions": ["маслозаменитель", "масларь", "эксперт по маслу"]
+    },
+    {
+      "name": "Дженни",
+      "surname": "Масло",
+      "photo": "https://sun1.userapi.com/sun1-85/s/v1/ig2/uHLNqpMwVxhDFFaUiSOQibeANGl1Ypfz2nnuIJg41CojSG7hh2vosdUNxH5yq1jzQ3-t8NJL4uBZSRQKLCmRPEq0.jpg?size=1280x997&quality=96&type=album",
+      "professions": ["жена Сергея Масло", "эксперт в области подбора мужей", "денз денз вив май маслице"]
+    },
+    {
+      "name": "Доминик",
+      "surname": "Патрон",
+      "photo": "https://sun9-east.userapi.com/sun9-22/s/v1/ig2/sjKhQwz0aN_5dEg8kRWVyNSHVuVLymhHlgJ-Mb5DWjN-vcrQ47kEY4wtdwwU6F4JyZlJSHc_F8b4xX6x7yjmDixY.jpg?size=1280x1280&quality=95&type=album",
+      "professions": ["водитель меркедес бендз", "перевозчик бочонков с натуральным удобрением", "любитель пить blazer"]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div style="text-align: center;"> <h3>Оформление каюты</h3> </div>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Цвет стен</th>
+      <th scope="col">Эмблема</th>
+    </tr>
+  </thead>
+{% set path = pol + '.png' | string() %}
+{% set age = age | int() %}
+  <tbody>
+    <tr>
+      <td><img src={{path}}></td>
+      {% if age <= 21 %}
+          <td><img src="static\img\kotik.png"></td>
+      {% else %}
+          <td><img src="static\img\sergey_maslo.jpg"></td>
+      {% endif %}
+    </tr>
+  </tbody>
+</table>
+{% endblock %}

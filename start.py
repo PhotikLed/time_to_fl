@@ -1,4 +1,5 @@
 from flask import Flask, render_template, redirect
+import json
 
 from wtf_cal import LoginForm
 
@@ -62,9 +63,24 @@ def distribution():
     crew = ['Сергей Масло', 'Петр Патрон', 'Миша Антифриз', 'Леонид Якубович', 'Виталий Тормозуха']
     return render_template('kauty.html', crew=crew)
 
+
 @app.route('/table/<pol>/<age>')
 def table(pol, age):
-    return render_template()
+    return render_template('oform_kauty.html', pol=pol, age=age)
+
+
+def spis_to_string(spis):
+    return ', '.join(spis)
+
+
+app.jinja_env.filters['spis_to_string'] = spis_to_string
+
+
+@app.route('/member')
+def member():
+    with open('templates/crew.json', encoding='utf-8') as crew:
+        crew = json.loads(crew.read())
+    return render_template('crew.html', crew=crew)
 
 
 if __name__ == '__main__':
